@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="bg-white text-gray-600 px-6 py-10 md:px-20">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
-                {/* Logo and Vision */}
+                
                 <div>
                     <h1 className="text-blue-600 text-3xl font-bold mb-3">MORENT</h1>
 
@@ -14,7 +14,7 @@ const Footer = () => {
                     </p>
                 </div>
 
-                {/* About */}
+                
                 <div>
                     <h3 className="font-semibold text-gray-900 mb-3">About</h3>
                     <ul className="space-y-2 text-sm">
@@ -25,7 +25,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                {/* Community */}
+                 
                 <div>
                     <h3 className="font-semibold text-gray-900 mb-3">Community</h3>
                     <ul className="space-y-2 text-sm">
@@ -36,7 +36,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                {/* Socials */}
+                
                 <div>
                     <h3 className="font-semibold text-gray-900 mb-3">Socials</h3>
                     <ul className="space-y-2 text-sm">
@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* Bottom Bar */}
+             
             <div className="border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row justify-between text-sm text-gray-500">
                 <p>©2022 MORENT. All rights reserved</p>
                 <div className="flex space-x-4 mt-2 md:mt-0">
