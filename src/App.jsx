@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Data from './Data/Data';
 import Card from './Card/Card';
 import { useNavigate } from 'react-router-dom';
+import Footer from './components/Footer';
 
 const data = [
   {
@@ -151,6 +152,7 @@ export default function App() {
           ))}
         </main>
       </div>
+      <Footer/>
     </div>
   );
 }

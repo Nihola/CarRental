@@ -6,7 +6,8 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
                 {/* Logo and Vision */}
                 <div>
-                    <h2 className="text-2xl font-bold text-blue-600 mb-3">MORENT</h2>
+                    <h1 className="text-blue-600 text-3xl font-bold mb-3">MORENT</h1>
+
                     <p className="text-sm leading-relaxed">
                         Our vision is to provide convenience<br />
                         and help increase your sales business.
