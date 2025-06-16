@@ -1,0 +1,11 @@
+.mySwiper2 {
+    width: 100%;
+    
+  }
+  
+  .mySwiper {
+    height: 80px;
+  }
+  .mySwiper img {
+    cursor: pointer;
+    object-fit: cover;}

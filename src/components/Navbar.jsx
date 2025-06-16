@@ -1,11 +1,24 @@
-import React from 'react';
-import Logo from '../assets/Logo.png';
+
 import avatar from '../assets/avatar.png';
 
 import { BsSearch, BsFilterSquareFill } from "react-icons/bs";
 import { IoHeart, IoNotifications, IoSettingsSharp } from "react-icons/io5";
 
+import { useNavigate } from 'react-router-dom';
+import { useFavoriteStore } from '../store/favoriteStore';
+
+
 export default function Navbar() {
+    const navigate=useNavigate()
+    const {handleSearch}=useFavoriteStore()
+    const handleClick = () => {
+        try {
+            navigate("/favorites");
+        } catch (err) {
+            console.error("Navigation failed:", err);
+        }
+    };
+      
     return (
         <nav className="w-full px-4 py-4 shadow-md">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
@@ -19,6 +32,7 @@ export default function Navbar() {
                         <div className="flex items-center gap-2 flex-1">
                             <BsSearch className="text-xl" />
                             <input
+                            onChange={(e)=>handleSearch(e.target.value)}
                                 type="text"
                                 placeholder="Search something here"
                                 className="focus:outline-none text-[16px] w-full"
@@ -30,9 +44,15 @@ export default function Navbar() {
 
                
                 <div className="flex items-center gap-6">
-                    <div className="rounded-full border border-gray-300 p-2 hover:bg-cyan-500 transition">
-                        <IoHeart />
-                    </div>
+                    
+                     
+                        <div
+                            onClick={handleClick}
+                            className="rounded-full border border-gray-300 p-2 hover:bg-cyan-500 transition cursor-pointer"
+                        >
+                            <IoHeart />
+                        </div>
+                     
                     <div className="rounded-full border border-gray-300 p-2 hover:bg-cyan-500 transition">
                         <IoNotifications />
                     </div>
